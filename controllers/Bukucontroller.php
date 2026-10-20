@@ -15,7 +15,7 @@ class BukuController {
         if (isset($_GET['aksi']) && $_GET['aksi'] === 'edit') {
             $edit_buku = $this->model->getBukuById($_GET['id']);
         }
-        require_once "views/Buku_view.php";
+        require_once "Modul 3/views/Buku_view.php";
     }
     public function tambah($judul, $penulis, $tahun) {
         if (!empty($judul) && !empty($penulis)) {
